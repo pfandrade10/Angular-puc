@@ -1,6 +1,6 @@
-<div class="box">
-    <figure *ngFor="let movie of movies">
-      <img src="{{'https://image.tmdb.org/t/p/w500' + movie.poster_path}}" alt="">
-      <figcaption class="movie">{{ movie.title }}</figcaption>
-    </figure>
+<app-movie-search (newFilterEvent)="filterMovie($event)"></app-movie-search>
+<div class="container" class="box">
+  <figure *ngFor="let item of listFilteredMovie">
+    <app-movie-item [movie]=item [urlImgs]></app-movie-item>
+  </figure>
 </div>
