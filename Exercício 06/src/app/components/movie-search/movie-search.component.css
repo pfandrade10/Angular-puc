@@ -4,7 +4,7 @@ input {
     border: 1px solid #333333;
     border-radius: 5px;
     color: #333333;
-    margin-left: 39px;
+    margin-left: 40px;
   }
   textarea:focus,
   input:focus {
@@ -16,4 +16,16 @@ input {
     padding: 5px;
     border: none;
     cursor: pointer;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  a:hover{
+    cursor: pointer;;
+    text-decoration: underline;
+    opacity: 0.8;
   }
