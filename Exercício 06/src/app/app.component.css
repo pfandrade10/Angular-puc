@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+}
+
+.title {
+font-weight: bold;  
+font-size: xx-large;  
+color: #9ca4ad;
+}
