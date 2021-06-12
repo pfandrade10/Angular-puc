@@ -1,1 +1,14 @@
-<p>movie-detail works!</p>
+<div style="justify-content:center; display:flex">
+    <mat-card class="card-detail">
+        <mat-card-header>       
+            <mat-card-title><b>{{ movieDetail.title }}</b></mat-card-title>
+            <a style="float: right;" [routerLink]="['/']" href=""> Voltar</a>  
+        </mat-card-header>
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2' + movieDetail.poster_path" alt="">
+        <mat-card-content>
+            <p>
+                {{ movieDetail.overview }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

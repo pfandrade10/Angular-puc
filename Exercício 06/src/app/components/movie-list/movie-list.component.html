@@ -1,4 +1,4 @@
-<app-movie-search (newFilterEvent)="filterMovie($event)"></app-movie-search>
+<app-movie-search (newFilterEvent)="filterMovie($event)" (orderBy)="onOrderBy($event)"></app-movie-search>
 <div class="container" class="box">
   <figure *ngFor="let item of listFilteredMovie">
     <app-movie-item [movie]=item [urlImgs]></app-movie-item>

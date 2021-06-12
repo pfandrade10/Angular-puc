@@ -37,7 +37,7 @@ export class MovieListComponent implements OnInit {
   } 
 
   onOrderBy(orderField: string): void {
-    console.log(this.listFilteredMovie);
+    //console.log(this.listFilteredMovie);
     this.listFilteredMovie.sort((a, b) => {
       return b[orderField] - a[orderField]
     })

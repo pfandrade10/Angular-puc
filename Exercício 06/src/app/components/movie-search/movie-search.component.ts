@@ -9,15 +9,19 @@ export class MovieSearchComponent implements OnInit {
 
   @Output() filter = "";
   @Output() newFilterEvent = new EventEmitter<string>();
-
-  onInputChange(name: string){
-    const handleString = name.charAt(0).toUpperCase() + name.substr(1);
-    this.newFilterEvent.emit(handleString);
-  }
+  @Output() orderBy = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onInputChange(name: string){
+    const handleString = name.charAt(0).toUpperCase() + name.substr(1);
+    this.newFilterEvent.emit(handleString);
+  }
+
+  onOrderBy(orderField: string): void {
+    this.orderBy.emit(orderField);
+  }
 }

@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule, 
     HttpClientModule,
     AppRoutingModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
