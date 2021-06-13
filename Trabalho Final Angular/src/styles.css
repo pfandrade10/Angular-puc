@@ -5,6 +5,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    height: 100vh;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -13,9 +14,4 @@ html {
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
-}
-
-.container{
-    width: calc(100%-300px);
-    padding: 50px 20px 50px 10px;
 }

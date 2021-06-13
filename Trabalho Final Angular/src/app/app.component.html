@@ -1,7 +1,20 @@
-<app-header></app-header>
-<!-- <app-navbar></app-navbar> -->
-<div style="margin: 30px;">
-    <router-outlet></router-outlet>
-</div>
 
-<app-footer></app-footer>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <ul>
+            <li><a href="" [routerLink]="['/character']" >Personagens</a></li>
+            <li><a href="" [routerLink]="['/comic']" >Quadrinhos</a></li>
+        </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header></app-header>
+        <!-- <app-navbar></app-navbar> -->
+        <div style="margin: 30px;">
+            <router-outlet></router-outlet>
+        </div>
+        
+        <app-footer></app-footer>
+      <button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

@@ -4,8 +4,6 @@ import { CharacterDetailComponent } from './components/character-detail/characte
 import { CharacterListComponent } from './components/character-list/character-list.component';
 import { ComicDetailComponent } from './components/comic-detail/comic-detail.component';
 import { ComicListComponent } from './components/comic-list/comic-list.component';
-import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
-import { MovieListComponent } from './components/movie-list/movie-list.component';
 
 const routes: Routes = [
   {path: "character",component: CharacterListComponent},
