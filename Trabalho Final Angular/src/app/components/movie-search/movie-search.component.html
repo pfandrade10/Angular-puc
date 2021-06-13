@@ -1,0 +1,10 @@
+  
+<form>
+  <input type="text" [(ngModel)]="filter" name="filter" (ngModelChange)="onInputChange($event)" placeholder="Pesquisar">
+</form>
+<div>
+  <a href="#" (click)="onOrderBy('vote_count')">Ordenar por Votos</a>
+</div>
+<div>
+  <a href="#" (click)="onOrderBy('popularity')">Ordenar por Popularidade</a>
+</div>

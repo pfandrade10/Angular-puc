@@ -1,0 +1,4 @@
+
+<img [routerLink]="['/movie', movie.id]" src="{{'https://image.tmdb.org/t/p/w500' + movie.poster_path}}" alt="">
+<figcaption [routerLink]="['/movie', movie.id]" class="movie">{{ movie.title }}</figcaption>
+
