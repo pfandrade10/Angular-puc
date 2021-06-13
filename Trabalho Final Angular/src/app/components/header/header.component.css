@@ -1,0 +1,22 @@
+  
+.main-header {
+    padding: 15px;
+    background-color: #52616f;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+a{
+    color: #f0a500;
+}
+
+.navbar-brand {  
+    margin-left: 43px
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        margin-left: 43px
+    }
+  }
