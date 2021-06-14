@@ -12,7 +12,7 @@ export class ComicItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.comic)
+    
   }
 
 }
