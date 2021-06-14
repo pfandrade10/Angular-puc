@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AlertService, AlertType } from '../../services/alert.service';
 import { MarvelService } from '../../services/marvel.service';
 
 @Component({
@@ -13,15 +14,26 @@ export class CharacterDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private marvelService: MarvelService
+    private marvelService: MarvelService,
+    private alertService: AlertService,
   ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      this.marvelService.getCharacter(params.id).subscribe(result => {
-        this.characterDetail = result;
-      });
-    });
+    
+
+    this.populateCharacter()
   }
 
+  populateCharacter(){
+    this.route.params.subscribe((params) => {
+      this.marvelService.getCharacter(params.id).subscribe(response => {
+        this.characterDetail = response.data.results[0];
+        console.log(this.characterDetail)
+      }),
+      (error)=>{
+        console.log(error)   
+        this.alertService.show('Erro inesperado', error, AlertType.error);
+      };
+    });  
+  } 
 }

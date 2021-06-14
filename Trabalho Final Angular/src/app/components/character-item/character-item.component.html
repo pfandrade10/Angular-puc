@@ -1,3 +1,13 @@
-<img [routerLink]="['/character', character.id]" src="{{character.thumbnail.path}}'.'{{character.thumbnail.extension}}" alt="">
-<figcaption [routerLink]="['/character', character.id]" class="character">{{ character.name }}</figcaption>
-<p [routerLink]="['/character', character.id]" class="character">{{ character.name }}</p>
+<div style="justify-content:center; display:flex">
+    <mat-card class="card-detail">
+        <mat-card-header>       
+            <mat-card-title>            
+                <a [routerLink]="['/character/idCharacter', character.id]" class="character">{{ character.name }}</a>  
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="character.thumbnail.path+'.'+character.thumbnail.extension" alt="">
+        <mat-card-content>
+         
+        </mat-card-content>
+    </mat-card>
+</div>

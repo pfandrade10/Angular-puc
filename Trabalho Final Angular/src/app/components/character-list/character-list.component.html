@@ -1,8 +1,8 @@
 <div class="container">
     <!-- <app-movie-search (newFilterEvent)="filterMovie($event)" (orderBy)="onOrderBy($event)"></app-movie-search> -->
     <div class="container" class="box">
-      <figure *ngFor="let item of listFilteredCharacter">
-        <app-character-item [character]=item></app-character-item>
-      </figure>
+        <div *ngFor="let item of listFilteredCharacter">
+            <app-character-item [character]=item></app-character-item>
+        </div>
     </div>
   </div>

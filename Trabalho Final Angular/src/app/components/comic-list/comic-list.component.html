@@ -1,1 +1,8 @@
-<p>comic-list works!</p>
+<div class="container">
+    <!-- <app-movie-search (newFilterEvent)="filterMovie($event)" (orderBy)="onOrderBy($event)"></app-movie-search> -->
+    <div class="container" class="box">
+        <div *ngFor="let item of listFilteredComic">
+            <app-comic-item [comic]=item></app-comic-item>
+        </div>
+    </div>
+  </div>

@@ -24,9 +24,9 @@ export class CharacterListComponent implements OnInit {
   // }
 
   populateCharacters(){
-    this.marvelService.listCharacter().subscribe((response)=>{
-      this.listCharacter = response.results;
-      this.listFilteredCharacter = response.results;
+    this.marvelService.listCharacter().subscribe((response)=>{    
+      this.listCharacter = response.data.results;
+      this.listFilteredCharacter = response.data.results;
     }),
     (error)=>{
       console.log(error)   

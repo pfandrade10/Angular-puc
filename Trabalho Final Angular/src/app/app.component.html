@@ -8,13 +8,14 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <app-header></app-header>
+        <button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
         <!-- <app-navbar></app-navbar> -->
         <div style="margin: 30px;">
             <router-outlet></router-outlet>
         </div>
         
         <app-footer></app-footer>
-      <button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+      
     </mat-sidenav-content>
     
 </mat-sidenav-container>
