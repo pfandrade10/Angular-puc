@@ -2,9 +2,9 @@
 .main {
     background-color: #333333;
     margin: 0px;
+    height: 100vh;
 }
 html {
-    overflow: scroll;
     overflow-x: hidden;
 }
 

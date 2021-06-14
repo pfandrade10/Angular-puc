@@ -9,4 +9,10 @@ export class AppComponent {
   
   title = "movies";
   public opened = true;
+
+  toggleSideNav(event){
+
+    console.log(event)
+    this.opened = event
+  }
 }

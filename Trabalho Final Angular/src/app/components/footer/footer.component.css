@@ -2,13 +2,14 @@
     position:fixed;
     bottom: 0px;
     width: 100%;
-   
+    z-index: 1000;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    color: #f0a500;
+    color: #d9ecff;
     background-color: #52616f;
     padding: 20px;
+    box-shadow: 0px 0px 4px 0px cadetblue;
 }
 
 .footer-container {

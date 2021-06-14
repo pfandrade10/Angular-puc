@@ -24,6 +24,23 @@ mat-sidenav, mat-sidenav-content{
 }
 
 mat-sidenav{
-  background-color: #52616f;
+  background-color: #273c4f;
   width: 200px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 58px 0px 58px 0px;
+}
+
+li{
+  padding: 10px;
+  color: #d9ecff;
+  text-decoration: none;
+}
+
+li:hover{
+  background-color: #7b91a6;
+  cursor: pointer;
 }
