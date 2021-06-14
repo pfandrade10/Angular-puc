@@ -18,18 +18,18 @@ export class MarvelService {
   constructor(private http: HttpClient) { }
 
   listCharacter(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/characters?ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
+    return this.http.get<any>(`${this.apiUrl}/characters?limit=100&ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
   }
 
   getCharacter(idCharacter): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/characters/${idCharacter}?ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
+    return this.http.get<any>(`${this.apiUrl}/characters/${idCharacter}?limit=100&ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
   }
 
   listComic(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/comics?ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
+    return this.http.get<any>(`${this.apiUrl}/comics?limit=100&ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
   }
 
   getComic(idComic): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/comics/${idComic}?ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
+    return this.http.get<any>(`${this.apiUrl}/comics/${idComic}?limit=100&ts=${this.ts}&apikey=${this.apiKey}&hash=${this.hash}`);
   }
 }
