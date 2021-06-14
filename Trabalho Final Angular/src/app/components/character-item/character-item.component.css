@@ -24,10 +24,15 @@
     opacity: 0.8;
   }
 
-  .card-detail{
-    max-width: 300px;
-    color: #262626;
-    background-color: #7a7a7a;
+mat-card{
+  max-width: 200px;
+  min-height: 300px;
+  margin: 20px;
+} 
+
+.mat-card-image {
+  max-height: 225px;
+  margin: 0px
 }
 
 p{

@@ -24,12 +24,16 @@
     opacity: 0.8;
   }
 
-  .card-detail{
-    max-width: 300px;
-    color: #262626;
-    background-color: #7a7a7a;
-}
-
+  mat-card{
+    max-width: 200px;
+    min-height: 450px;
+    margin: 20px;
+  } 
+  
+  .mat-card-image {
+    max-height: 350px;
+    margin: 0px
+  }
 p{
     color: #262626;
 }
@@ -43,4 +47,9 @@ a:hover{
     opacity: 0.8;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.mat-card-image {
+  
+   margin: 0px
 }
