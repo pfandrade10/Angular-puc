@@ -21,6 +21,7 @@ mat-sidenav-container{
 
 mat-sidenav, mat-sidenav-content{
   padding: 0px;
+  margin: 58px 0px 58px 0px;
 }
 
 mat-sidenav{
@@ -30,12 +31,11 @@ mat-sidenav{
 
 ul{
   list-style: none;
-  padding: 0px;
-  margin: 58px 0px 58px 0px;
+  padding: 0px; 
 }
 
 li{
-  padding: 10px;
+  padding: 10px 0px 10px 20px;
   color: #d9ecff;
   text-decoration: none;
 }
