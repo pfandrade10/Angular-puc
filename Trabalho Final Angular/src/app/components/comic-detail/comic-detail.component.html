@@ -1,1 +1,11 @@
-<p>comic-detail works!</p>
+<div style="justify-content:center; display:flex">
+    <mat-card class="card-detail">
+        <mat-card-header>       
+            <mat-card-title><b>{{ comicDetail.title }}</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="comicDetail.thumbnail.path + '.' + comicDetail.thumbnail.extension" alt="">
+        <mat-card-content>           
+            <a style="float: right;" [routerLink]="['/comic']" href=""> << Voltar</a>
+        </mat-card-content>
+    </mat-card>
+</div>

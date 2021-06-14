@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 .main {
     background-color: #333333;
+    margin: 0px;
 }
 html {
     overflow: scroll;
