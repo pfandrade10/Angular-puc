@@ -5,7 +5,7 @@
                 <a [routerLink]="['/character/idCharacter', character.id]" class="character">{{ character.name }}</a>  
             </mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="character.thumbnail.path+'.'+character.thumbnail.extension" alt="">
+        <img [routerLink]="['/character/idCharacter', character.id]" mat-card-image [src]="character.thumbnail.path+'.'+character.thumbnail.extension" alt="">
         <mat-card-content>
          
         </mat-card-content>

@@ -11,8 +11,6 @@ export class AppComponent {
   public opened = true;
 
   toggleSideNav(event){
-
-    console.log(event)
     this.opened = event
   }
 }

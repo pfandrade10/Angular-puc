@@ -21,8 +21,13 @@ a:hover{
     margin-left: 43px
 }
 
+mat-icon:hover{
+    cursor: pointer;
+    opacity: 0.85;
+}
+
 @media (max-width: 992px) {
     .nav-item {
         margin-left: 43px
     }
-  }
+}
