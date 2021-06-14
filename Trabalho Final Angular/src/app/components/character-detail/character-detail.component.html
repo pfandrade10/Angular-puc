@@ -4,8 +4,11 @@
             <mat-card-title><b>{{ characterDetail.name }}</b></mat-card-title>
         </mat-card-header>
         <img mat-card-image [src]="characterDetail.thumbnail.path + '.' + characterDetail.thumbnail.extension" alt="">
-        <mat-card-content>           
-            <a style="float: right;" [routerLink]="['/character']" href=""> << Voltar</a>
+        <mat-card-content>     
+            <p>Available Comics: {{characterDetail.comics.available}}</p>    
+            <p>Available Series: {{characterDetail.series.available}}</p>    
+            <p>Available Stotries: {{characterDetail.stories.available}}</p>      
+            <a style="float: right;" [routerLink]="['/character']" href=""> <mat-icon>arrow_back</mat-icon></a>
         </mat-card-content>
     </mat-card>
 </div>

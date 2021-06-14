@@ -17,6 +17,7 @@ import { ComicDetailComponent } from './components/comic-detail/comic-detail.com
 import { ComicItemComponent } from './components/comic-item/comic-item.component';
 import { ComicListComponent } from './components/comic-list/comic-list.component';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {MatIconModule} from '@angular/material/icon';
     ComicListComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule, 
